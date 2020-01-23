@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.43.2](https://www.github.com/googleapis/java-iamcredentials/compare/v0.43.1...v0.43.2) (2020-01-23)
+
+
+### Dependencies
+
+* update dependency org.threeten:threetenbp to v1.4.1 ([b9f477e](https://www.github.com/googleapis/java-iamcredentials/commit/b9f477e1ae937fec354d6d0fb3892989299a1b39))
+
 ### [0.43.1](https://www.github.com/googleapis/java-iamcredentials/compare/v0.43.0...v0.43.1) (2020-01-07)
 
 
