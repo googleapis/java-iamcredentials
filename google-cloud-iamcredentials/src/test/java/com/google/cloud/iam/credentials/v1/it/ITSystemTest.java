@@ -19,6 +19,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
 import com.google.auth.oauth2.GoogleCredentials;
+import com.google.auth.oauth2.ServiceAccountCredentials;
 import com.google.cloud.iam.credentials.v1.GenerateAccessTokenRequest;
 import com.google.cloud.iam.credentials.v1.GenerateAccessTokenResponse;
 import com.google.cloud.iam.credentials.v1.GenerateIdTokenRequest;
@@ -26,42 +27,35 @@ import com.google.cloud.iam.credentials.v1.GenerateIdTokenResponse;
 import com.google.cloud.iam.credentials.v1.IamCredentialsClient;
 import com.google.cloud.iam.credentials.v1.SignBlobRequest;
 import com.google.cloud.iam.credentials.v1.SignBlobResponse;
-import com.google.gson.Gson;
-import com.google.gson.JsonObject;
 import com.google.protobuf.ByteString;
 import com.google.protobuf.Duration;
-import org.junit.After;
-import org.junit.Before;
+import java.util.logging.Logger;
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
 import org.junit.Test;
 
 public class ITSystemTest {
 
-  private IamCredentialsClient client;
-  private String serviceAccount;
+  private static IamCredentialsClient client;
+  private static String serviceAccount;
 
-  private static final String GOOGLE_API_CLIENT_EMAIL = "clientEmail";
+  private static final Logger LOGGER = Logger.getGlobal();
   private static final String GOOGLE_API_CLOUD_SCOPE =
       "https://www.googleapis.com/auth/cloud-platform";
-  private static final String REGEXP = "^\"|\"$";
   private static final Duration LIFE_TIME = Duration.newBuilder().setSeconds(3600).build();
 
-  @Before
-  public void setUp() throws Exception {
+  @BeforeClass
+  public static void setUp() throws Exception {
+    ServiceAccountCredentials credentials =
+        (ServiceAccountCredentials) GoogleCredentials.getApplicationDefault();
     client = IamCredentialsClient.create();
-    serviceAccount = getFromCredential(GOOGLE_API_CLIENT_EMAIL);
+    serviceAccount = credentials.getClientEmail();
+    LOGGER.info("service-account:" + serviceAccount);
   }
 
-  @After
-  public void tearDown() {
+  @AfterClass
+  public static void tearDown() {
     client.close();
-  }
-
-  private static String getFromCredential(String key) throws Exception {
-    Gson gson = new Gson();
-    GoogleCredentials credentials =
-        GoogleCredentials.getApplicationDefault().createScoped(GOOGLE_API_CLOUD_SCOPE);
-    JsonObject jsonObject = gson.fromJson(gson.toJson(credentials), JsonObject.class);
-    return jsonObject.get(key).toString().replaceAll(REGEXP, "");
   }
 
   @Test
