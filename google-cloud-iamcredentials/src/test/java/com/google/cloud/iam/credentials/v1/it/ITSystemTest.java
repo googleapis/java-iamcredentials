@@ -63,8 +63,8 @@ public class ITSystemTest {
     GenerateAccessTokenRequest request =
         GenerateAccessTokenRequest.newBuilder()
             .setName(serviceAccount)
-            .addScope(GOOGLE_API_CLOUD_SCOPE)
             .setLifetime(LIFE_TIME)
+            .addScope(GOOGLE_API_CLOUD_SCOPE)
             .build();
     GenerateAccessTokenResponse accessToken = client.generateAccessToken(request);
     assertNotNull(accessToken);
