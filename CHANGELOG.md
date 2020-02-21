@@ -1,5 +1,18 @@
 # Changelog
 
+### [0.44.2](https://www.github.com/googleapis/java-iamcredentials/compare/v0.44.1...v0.44.2) (2020-02-21)
+
+
+### Dependencies
+
+* update dependency com.google.protobuf:protobuf-java to v3.11.4 ([7c28641](https://www.github.com/googleapis/java-iamcredentials/commit/7c2864176612a7e961247b301b96cc559eecade0))
+* update dependency io.grpc:grpc-bom to v1.27.1 ([7ce053c](https://www.github.com/googleapis/java-iamcredentials/commit/7ce053c3f3630b1b7c5c90744fdca00ec9e316f5))
+
+
+### Documentation
+
+* **regen:** update sample code to set total timeout, add API client header test ([a9737e1](https://www.github.com/googleapis/java-iamcredentials/commit/a9737e15d86839f72c7e2dc6b49cd7d41e7adc85))
+
 ### [0.44.1](https://www.github.com/googleapis/java-iamcredentials/compare/v0.44.0...v0.44.1) (2020-02-04)
 
 
