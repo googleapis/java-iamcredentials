@@ -3,4 +3,4 @@
 
 proto-google-cloud-iamcredentials-v1:0.45.0:0.45.0
 grpc-google-cloud-iamcredentials-v1:0.45.0:0.45.0
-google-cloud-iamcredentials:0.45.0:0.45.0
+google-cloud-iamcredentials:1.0.0:1.0.0
