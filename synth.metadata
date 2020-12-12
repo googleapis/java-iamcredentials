@@ -4,15 +4,15 @@
       "git": {
         "name": ".",
         "remote": "https://github.com/googleapis/java-iamcredentials.git",
-        "sha": "2f6671dc4d8935dfcaa4751652593529598452bb"
+        "sha": "5b60d01fbdf0968fa55ac51b8f3ec67eed261a31"
       }
     },
     {
       "git": {
         "name": "googleapis",
         "remote": "https://github.com/googleapis/googleapis.git",
-        "sha": "e2022bea2cd3273b0e42e0ac034d08c16aaa0ea0",
-        "internalRef": "317698083"
+        "sha": "4a3201d446e911aece3cc78cdb5c611bc063634e",
+        "internalRef": "345497349"
       }
     },
     {
@@ -101,14 +101,14 @@
     "CONTRIBUTING.md",
     "LICENSE",
     "codecov.yaml",
-    "google-cloud-iamcredentials/src/main/java/com/google/cloud/iam/credentials/v1/IamCredentialsClient.java",
-    "google-cloud-iamcredentials/src/main/java/com/google/cloud/iam/credentials/v1/IamCredentialsSettings.java",
+    "google-cloud-iamcredentials/src/main/java/com/google/cloud/iam/credentials/v1/IAMCredentialsClient.java",
+    "google-cloud-iamcredentials/src/main/java/com/google/cloud/iam/credentials/v1/IAMCredentialsSettings.java",
     "google-cloud-iamcredentials/src/main/java/com/google/cloud/iam/credentials/v1/package-info.java",
-    "google-cloud-iamcredentials/src/main/java/com/google/cloud/iam/credentials/v1/stub/GrpcIamCredentialsCallableFactory.java",
-    "google-cloud-iamcredentials/src/main/java/com/google/cloud/iam/credentials/v1/stub/GrpcIamCredentialsStub.java",
-    "google-cloud-iamcredentials/src/main/java/com/google/cloud/iam/credentials/v1/stub/IamCredentialsStub.java",
-    "google-cloud-iamcredentials/src/main/java/com/google/cloud/iam/credentials/v1/stub/IamCredentialsStubSettings.java",
-    "google-cloud-iamcredentials/src/test/java/com/google/cloud/iam/credentials/v1/IamCredentialsClientTest.java",
+    "google-cloud-iamcredentials/src/main/java/com/google/cloud/iam/credentials/v1/stub/GrpcIAMCredentialsCallableFactory.java",
+    "google-cloud-iamcredentials/src/main/java/com/google/cloud/iam/credentials/v1/stub/GrpcIAMCredentialsStub.java",
+    "google-cloud-iamcredentials/src/main/java/com/google/cloud/iam/credentials/v1/stub/IAMCredentialsStub.java",
+    "google-cloud-iamcredentials/src/main/java/com/google/cloud/iam/credentials/v1/stub/IAMCredentialsStubSettings.java",
+    "google-cloud-iamcredentials/src/test/java/com/google/cloud/iam/credentials/v1/IAMCredentialsClientTest.java",
     "google-cloud-iamcredentials/src/test/java/com/google/cloud/iam/credentials/v1/MockIAMCredentials.java",
     "google-cloud-iamcredentials/src/test/java/com/google/cloud/iam/credentials/v1/MockIAMCredentialsImpl.java",
     "grpc-google-cloud-iamcredentials-v1/src/main/java/com/google/cloud/iam/credentials/v1/IAMCredentialsGrpc.java",
