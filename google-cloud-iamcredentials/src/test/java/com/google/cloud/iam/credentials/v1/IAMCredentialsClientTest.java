@@ -83,7 +83,7 @@ public class IAMCredentialsClientTest {
   public void generateAccessTokenTest() throws Exception {
     GenerateAccessTokenResponse expectedResponse =
         GenerateAccessTokenResponse.newBuilder()
-            .setAccessToken("access_token-1938933922")
+            .setAccessToken("accessToken-1042689291")
             .setExpireTime(Timestamp.newBuilder().build())
             .build();
     mockIAMCredentials.addResponse(expectedResponse);
@@ -132,7 +132,7 @@ public class IAMCredentialsClientTest {
   public void generateAccessTokenTest2() throws Exception {
     GenerateAccessTokenResponse expectedResponse =
         GenerateAccessTokenResponse.newBuilder()
-            .setAccessToken("access_token-1938933922")
+            .setAccessToken("accessToken-1042689291")
             .setExpireTime(Timestamp.newBuilder().build())
             .build();
     mockIAMCredentials.addResponse(expectedResponse);
@@ -273,7 +273,7 @@ public class IAMCredentialsClientTest {
   public void signBlobTest() throws Exception {
     SignBlobResponse expectedResponse =
         SignBlobResponse.newBuilder()
-            .setKeyId("key_id-1134673157")
+            .setKeyId("keyId101944282")
             .setSignedBlob(ByteString.EMPTY)
             .build();
     mockIAMCredentials.addResponse(expectedResponse);
@@ -318,7 +318,7 @@ public class IAMCredentialsClientTest {
   public void signBlobTest2() throws Exception {
     SignBlobResponse expectedResponse =
         SignBlobResponse.newBuilder()
-            .setKeyId("key_id-1134673157")
+            .setKeyId("keyId101944282")
             .setSignedBlob(ByteString.EMPTY)
             .build();
     mockIAMCredentials.addResponse(expectedResponse);
@@ -363,8 +363,8 @@ public class IAMCredentialsClientTest {
   public void signJwtTest() throws Exception {
     SignJwtResponse expectedResponse =
         SignJwtResponse.newBuilder()
-            .setKeyId("key_id-1134673157")
-            .setSignedJwt("signed_jwt-979546844")
+            .setKeyId("keyId101944282")
+            .setSignedJwt("signedJwt1076760587")
             .build();
     mockIAMCredentials.addResponse(expectedResponse);
 
@@ -408,8 +408,8 @@ public class IAMCredentialsClientTest {
   public void signJwtTest2() throws Exception {
     SignJwtResponse expectedResponse =
         SignJwtResponse.newBuilder()
-            .setKeyId("key_id-1134673157")
-            .setSignedJwt("signed_jwt-979546844")
+            .setKeyId("keyId101944282")
+            .setSignedJwt("signedJwt1076760587")
             .build();
     mockIAMCredentials.addResponse(expectedResponse);
 
