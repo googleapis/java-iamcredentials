@@ -22,7 +22,20 @@ import static io.grpc.stub.ClientCalls.futureUnaryCall;
 import static io.grpc.stub.ServerCalls.asyncUnaryCall;
 import static io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall;
 
-/** */
+/**
+ *
+ *
+ * <pre>
+ * A service account is a special type of Google account that belongs to your
+ * application or a virtual machine (VM), instead of to an individual end user.
+ * Your application assumes the identity of the service account to call Google
+ * APIs, so that the users aren't directly involved.
+ * Service account credentials are used to temporarily assume the identity
+ * of the service account. Supported credential types include OAuth 2.0 access
+ * tokens, OpenID Connect ID tokens, self-signed JSON Web Tokens (JWTs), and
+ * more.
+ * </pre>
+ */
 @javax.annotation.Generated(
     value = "by gRPC proto compiler",
     comments = "Source: google/iam/credentials/v1/iamcredentials.proto")
@@ -262,10 +275,29 @@ public final class IAMCredentialsGrpc {
     return IAMCredentialsFutureStub.newStub(factory, channel);
   }
 
-  /** */
+  /**
+   *
+   *
+   * <pre>
+   * A service account is a special type of Google account that belongs to your
+   * application or a virtual machine (VM), instead of to an individual end user.
+   * Your application assumes the identity of the service account to call Google
+   * APIs, so that the users aren't directly involved.
+   * Service account credentials are used to temporarily assume the identity
+   * of the service account. Supported credential types include OAuth 2.0 access
+   * tokens, OpenID Connect ID tokens, self-signed JSON Web Tokens (JWTs), and
+   * more.
+   * </pre>
+   */
   public abstract static class IAMCredentialsImplBase implements io.grpc.BindableService {
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Generates an OAuth 2.0 access token for a service account.
+     * </pre>
+     */
     public void generateAccessToken(
         com.google.cloud.iam.credentials.v1.GenerateAccessTokenRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.iam.credentials.v1.GenerateAccessTokenResponse>
@@ -273,7 +305,13 @@ public final class IAMCredentialsGrpc {
       asyncUnimplementedUnaryCall(getGenerateAccessTokenMethod(), responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Generates an OpenID Connect ID token for a service account.
+     * </pre>
+     */
     public void generateIdToken(
         com.google.cloud.iam.credentials.v1.GenerateIdTokenRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.iam.credentials.v1.GenerateIdTokenResponse>
@@ -281,7 +319,13 @@ public final class IAMCredentialsGrpc {
       asyncUnimplementedUnaryCall(getGenerateIdTokenMethod(), responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Signs a blob using a service account's system-managed private key.
+     * </pre>
+     */
     public void signBlob(
         com.google.cloud.iam.credentials.v1.SignBlobRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.iam.credentials.v1.SignBlobResponse>
@@ -289,7 +333,13 @@ public final class IAMCredentialsGrpc {
       asyncUnimplementedUnaryCall(getSignBlobMethod(), responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Signs a JWT using a service account's system-managed private key.
+     * </pre>
+     */
     public void signJwt(
         com.google.cloud.iam.credentials.v1.SignJwtRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.iam.credentials.v1.SignJwtResponse>
@@ -332,7 +382,20 @@ public final class IAMCredentialsGrpc {
     }
   }
 
-  /** */
+  /**
+   *
+   *
+   * <pre>
+   * A service account is a special type of Google account that belongs to your
+   * application or a virtual machine (VM), instead of to an individual end user.
+   * Your application assumes the identity of the service account to call Google
+   * APIs, so that the users aren't directly involved.
+   * Service account credentials are used to temporarily assume the identity
+   * of the service account. Supported credential types include OAuth 2.0 access
+   * tokens, OpenID Connect ID tokens, self-signed JSON Web Tokens (JWTs), and
+   * more.
+   * </pre>
+   */
   public static final class IAMCredentialsStub
       extends io.grpc.stub.AbstractAsyncStub<IAMCredentialsStub> {
     private IAMCredentialsStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
@@ -344,7 +407,13 @@ public final class IAMCredentialsGrpc {
       return new IAMCredentialsStub(channel, callOptions);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Generates an OAuth 2.0 access token for a service account.
+     * </pre>
+     */
     public void generateAccessToken(
         com.google.cloud.iam.credentials.v1.GenerateAccessTokenRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.iam.credentials.v1.GenerateAccessTokenResponse>
@@ -355,7 +424,13 @@ public final class IAMCredentialsGrpc {
           responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Generates an OpenID Connect ID token for a service account.
+     * </pre>
+     */
     public void generateIdToken(
         com.google.cloud.iam.credentials.v1.GenerateIdTokenRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.iam.credentials.v1.GenerateIdTokenResponse>
@@ -366,7 +441,13 @@ public final class IAMCredentialsGrpc {
           responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Signs a blob using a service account's system-managed private key.
+     * </pre>
+     */
     public void signBlob(
         com.google.cloud.iam.credentials.v1.SignBlobRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.iam.credentials.v1.SignBlobResponse>
@@ -375,7 +456,13 @@ public final class IAMCredentialsGrpc {
           getChannel().newCall(getSignBlobMethod(), getCallOptions()), request, responseObserver);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Signs a JWT using a service account's system-managed private key.
+     * </pre>
+     */
     public void signJwt(
         com.google.cloud.iam.credentials.v1.SignJwtRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.iam.credentials.v1.SignJwtResponse>
@@ -385,7 +472,20 @@ public final class IAMCredentialsGrpc {
     }
   }
 
-  /** */
+  /**
+   *
+   *
+   * <pre>
+   * A service account is a special type of Google account that belongs to your
+   * application or a virtual machine (VM), instead of to an individual end user.
+   * Your application assumes the identity of the service account to call Google
+   * APIs, so that the users aren't directly involved.
+   * Service account credentials are used to temporarily assume the identity
+   * of the service account. Supported credential types include OAuth 2.0 access
+   * tokens, OpenID Connect ID tokens, self-signed JSON Web Tokens (JWTs), and
+   * more.
+   * </pre>
+   */
   public static final class IAMCredentialsBlockingStub
       extends io.grpc.stub.AbstractBlockingStub<IAMCredentialsBlockingStub> {
     private IAMCredentialsBlockingStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
@@ -398,33 +498,70 @@ public final class IAMCredentialsGrpc {
       return new IAMCredentialsBlockingStub(channel, callOptions);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Generates an OAuth 2.0 access token for a service account.
+     * </pre>
+     */
     public com.google.cloud.iam.credentials.v1.GenerateAccessTokenResponse generateAccessToken(
         com.google.cloud.iam.credentials.v1.GenerateAccessTokenRequest request) {
       return blockingUnaryCall(
           getChannel(), getGenerateAccessTokenMethod(), getCallOptions(), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Generates an OpenID Connect ID token for a service account.
+     * </pre>
+     */
     public com.google.cloud.iam.credentials.v1.GenerateIdTokenResponse generateIdToken(
         com.google.cloud.iam.credentials.v1.GenerateIdTokenRequest request) {
       return blockingUnaryCall(getChannel(), getGenerateIdTokenMethod(), getCallOptions(), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Signs a blob using a service account's system-managed private key.
+     * </pre>
+     */
     public com.google.cloud.iam.credentials.v1.SignBlobResponse signBlob(
         com.google.cloud.iam.credentials.v1.SignBlobRequest request) {
       return blockingUnaryCall(getChannel(), getSignBlobMethod(), getCallOptions(), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Signs a JWT using a service account's system-managed private key.
+     * </pre>
+     */
     public com.google.cloud.iam.credentials.v1.SignJwtResponse signJwt(
         com.google.cloud.iam.credentials.v1.SignJwtRequest request) {
       return blockingUnaryCall(getChannel(), getSignJwtMethod(), getCallOptions(), request);
     }
   }
 
-  /** */
+  /**
+   *
+   *
+   * <pre>
+   * A service account is a special type of Google account that belongs to your
+   * application or a virtual machine (VM), instead of to an individual end user.
+   * Your application assumes the identity of the service account to call Google
+   * APIs, so that the users aren't directly involved.
+   * Service account credentials are used to temporarily assume the identity
+   * of the service account. Supported credential types include OAuth 2.0 access
+   * tokens, OpenID Connect ID tokens, self-signed JSON Web Tokens (JWTs), and
+   * more.
+   * </pre>
+   */
   public static final class IAMCredentialsFutureStub
       extends io.grpc.stub.AbstractFutureStub<IAMCredentialsFutureStub> {
     private IAMCredentialsFutureStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
@@ -437,7 +574,13 @@ public final class IAMCredentialsGrpc {
       return new IAMCredentialsFutureStub(channel, callOptions);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Generates an OAuth 2.0 access token for a service account.
+     * </pre>
+     */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.iam.credentials.v1.GenerateAccessTokenResponse>
         generateAccessToken(
@@ -446,7 +589,13 @@ public final class IAMCredentialsGrpc {
           getChannel().newCall(getGenerateAccessTokenMethod(), getCallOptions()), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Generates an OpenID Connect ID token for a service account.
+     * </pre>
+     */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.iam.credentials.v1.GenerateIdTokenResponse>
         generateIdToken(com.google.cloud.iam.credentials.v1.GenerateIdTokenRequest request) {
@@ -454,14 +603,26 @@ public final class IAMCredentialsGrpc {
           getChannel().newCall(getGenerateIdTokenMethod(), getCallOptions()), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Signs a blob using a service account's system-managed private key.
+     * </pre>
+     */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.iam.credentials.v1.SignBlobResponse>
         signBlob(com.google.cloud.iam.credentials.v1.SignBlobRequest request) {
       return futureUnaryCall(getChannel().newCall(getSignBlobMethod(), getCallOptions()), request);
     }
 
-    /** */
+    /**
+     *
+     *
+     * <pre>
+     * Signs a JWT using a service account's system-managed private key.
+     * </pre>
+     */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.iam.credentials.v1.SignJwtResponse>
         signJwt(com.google.cloud.iam.credentials.v1.SignJwtRequest request) {
