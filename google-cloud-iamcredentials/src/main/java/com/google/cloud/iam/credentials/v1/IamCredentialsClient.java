@@ -19,8 +19,8 @@ package com.google.cloud.iam.credentials.v1;
 import com.google.api.core.BetaApi;
 import com.google.api.gax.core.BackgroundResource;
 import com.google.api.gax.rpc.UnaryCallable;
-import com.google.cloud.iam.credentials.v1.stub.IAMCredentialsStub;
-import com.google.cloud.iam.credentials.v1.stub.IAMCredentialsStubSettings;
+import com.google.cloud.iam.credentials.v1.stub.IamCredentialsStub;
+import com.google.cloud.iam.credentials.v1.stub.IamCredentialsStubSettings;
 import com.google.protobuf.ByteString;
 import com.google.protobuf.Duration;
 import java.io.IOException;
@@ -42,7 +42,7 @@ import javax.annotation.Generated;
  * <p>This class provides the ability to make remote calls to the backing service through method
  * calls that map to API methods. Sample code to get started:
  *
- * <p>Note: close() needs to be called on the IAMCredentialsClient object to clean up resources such
+ * <p>Note: close() needs to be called on the IamCredentialsClient object to clean up resources such
  * as threads. In the example above, try-with-resources is used, which automatically calls close().
  *
  * <p>The surface of this class includes several types of Java methods for each of the API's
@@ -65,80 +65,80 @@ import javax.annotation.Generated;
  * these names, this class includes a format method for each type of name, and additionally a parse
  * method to extract the individual identifiers contained within names that are returned.
  *
- * <p>This class can be customized by passing in a custom instance of IAMCredentialsSettings to
+ * <p>This class can be customized by passing in a custom instance of IamCredentialsSettings to
  * create(). For example:
  *
  * <p>To customize credentials:
  *
  * <pre>{@code
- * IAMCredentialsSettings iAMCredentialsSettings =
- *     IAMCredentialsSettings.newBuilder()
+ * IamCredentialsSettings iamCredentialsSettings =
+ *     IamCredentialsSettings.newBuilder()
  *         .setCredentialsProvider(FixedCredentialsProvider.create(myCredentials))
  *         .build();
- * IAMCredentialsClient iAMCredentialsClient = IAMCredentialsClient.create(iAMCredentialsSettings);
+ * IamCredentialsClient iamCredentialsClient = IamCredentialsClient.create(iamCredentialsSettings);
  * }</pre>
  *
  * <p>To customize the endpoint:
  *
  * <pre>{@code
- * IAMCredentialsSettings iAMCredentialsSettings =
- *     IAMCredentialsSettings.newBuilder().setEndpoint(myEndpoint).build();
- * IAMCredentialsClient iAMCredentialsClient = IAMCredentialsClient.create(iAMCredentialsSettings);
+ * IamCredentialsSettings iamCredentialsSettings =
+ *     IamCredentialsSettings.newBuilder().setEndpoint(myEndpoint).build();
+ * IamCredentialsClient iamCredentialsClient = IamCredentialsClient.create(iamCredentialsSettings);
  * }</pre>
  *
  * <p>Please refer to the GitHub repository's samples for more quickstart code snippets.
  */
 @BetaApi
 @Generated("by gapic-generator")
-public class IAMCredentialsClient implements BackgroundResource {
-  private final IAMCredentialsSettings settings;
-  private final IAMCredentialsStub stub;
+public class IamCredentialsClient implements BackgroundResource {
+  private final IamCredentialsSettings settings;
+  private final IamCredentialsStub stub;
 
-  /** Constructs an instance of IAMCredentialsClient with default settings. */
-  public static final IAMCredentialsClient create() throws IOException {
-    return create(IAMCredentialsSettings.newBuilder().build());
+  /** Constructs an instance of IamCredentialsClient with default settings. */
+  public static final IamCredentialsClient create() throws IOException {
+    return create(IamCredentialsSettings.newBuilder().build());
   }
 
   /**
-   * Constructs an instance of IAMCredentialsClient, using the given settings. The channels are
+   * Constructs an instance of IamCredentialsClient, using the given settings. The channels are
    * created based on the settings passed in, or defaults for any settings that are not set.
    */
-  public static final IAMCredentialsClient create(IAMCredentialsSettings settings)
+  public static final IamCredentialsClient create(IamCredentialsSettings settings)
       throws IOException {
-    return new IAMCredentialsClient(settings);
+    return new IamCredentialsClient(settings);
   }
 
   /**
-   * Constructs an instance of IAMCredentialsClient, using the given stub for making calls. This is
-   * for advanced usage - prefer using create(IAMCredentialsSettings).
+   * Constructs an instance of IamCredentialsClient, using the given stub for making calls. This is
+   * for advanced usage - prefer using create(IamCredentialsSettings).
    */
   @BetaApi("A restructuring of stub classes is planned, so this may break in the future")
-  public static final IAMCredentialsClient create(IAMCredentialsStub stub) {
-    return new IAMCredentialsClient(stub);
+  public static final IamCredentialsClient create(IamCredentialsStub stub) {
+    return new IamCredentialsClient(stub);
   }
 
   /**
-   * Constructs an instance of IAMCredentialsClient, using the given settings. This is protected so
+   * Constructs an instance of IamCredentialsClient, using the given settings. This is protected so
    * that it is easy to make a subclass, but otherwise, the static factory methods should be
    * preferred.
    */
-  protected IAMCredentialsClient(IAMCredentialsSettings settings) throws IOException {
+  protected IamCredentialsClient(IamCredentialsSettings settings) throws IOException {
     this.settings = settings;
-    this.stub = ((IAMCredentialsStubSettings) settings.getStubSettings()).createStub();
+    this.stub = ((IamCredentialsStubSettings) settings.getStubSettings()).createStub();
   }
 
   @BetaApi("A restructuring of stub classes is planned, so this may break in the future")
-  protected IAMCredentialsClient(IAMCredentialsStub stub) {
+  protected IamCredentialsClient(IamCredentialsStub stub) {
     this.settings = null;
     this.stub = stub;
   }
 
-  public final IAMCredentialsSettings getSettings() {
+  public final IamCredentialsSettings getSettings() {
     return settings;
   }
 
   @BetaApi("A restructuring of stub classes is planned, so this may break in the future")
-  public IAMCredentialsStub getStub() {
+  public IamCredentialsStub getStub() {
     return stub;
   }
 

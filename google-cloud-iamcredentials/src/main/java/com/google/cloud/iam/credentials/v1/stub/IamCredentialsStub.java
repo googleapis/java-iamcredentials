@@ -35,7 +35,7 @@ import javax.annotation.Generated;
  * <p>This class is for advanced usage and reflects the underlying API directly.
  */
 @Generated("by gapic-generator")
-public abstract class IAMCredentialsStub implements BackgroundResource {
+public abstract class IamCredentialsStub implements BackgroundResource {
 
   public UnaryCallable<GenerateAccessTokenRequest, GenerateAccessTokenResponse>
       generateAccessTokenCallable() {

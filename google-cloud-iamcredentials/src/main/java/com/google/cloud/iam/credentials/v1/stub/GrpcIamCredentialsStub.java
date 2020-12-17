@@ -47,7 +47,7 @@ import javax.annotation.Generated;
  * <p>This class is for advanced usage and reflects the underlying API directly.
  */
 @Generated("by gapic-generator-java")
-public class GrpcIAMCredentialsStub extends IAMCredentialsStub {
+public class GrpcIamCredentialsStub extends IamCredentialsStub {
   private static final MethodDescriptor<GenerateAccessTokenRequest, GenerateAccessTokenResponse>
       generateAccessTokenMethodDescriptor =
           MethodDescriptor.<GenerateAccessTokenRequest, GenerateAccessTokenResponse>newBuilder()
@@ -98,40 +98,40 @@ public class GrpcIAMCredentialsStub extends IAMCredentialsStub {
   private final GrpcOperationsStub operationsStub;
   private final GrpcStubCallableFactory callableFactory;
 
-  public static final GrpcIAMCredentialsStub create(IAMCredentialsStubSettings settings)
+  public static final GrpcIamCredentialsStub create(IamCredentialsStubSettings settings)
       throws IOException {
-    return new GrpcIAMCredentialsStub(settings, ClientContext.create(settings));
+    return new GrpcIamCredentialsStub(settings, ClientContext.create(settings));
   }
 
-  public static final GrpcIAMCredentialsStub create(ClientContext clientContext)
+  public static final GrpcIamCredentialsStub create(ClientContext clientContext)
       throws IOException {
-    return new GrpcIAMCredentialsStub(
-        IAMCredentialsStubSettings.newBuilder().build(), clientContext);
+    return new GrpcIamCredentialsStub(
+        IamCredentialsStubSettings.newBuilder().build(), clientContext);
   }
 
-  public static final GrpcIAMCredentialsStub create(
+  public static final GrpcIamCredentialsStub create(
       ClientContext clientContext, GrpcStubCallableFactory callableFactory) throws IOException {
-    return new GrpcIAMCredentialsStub(
-        IAMCredentialsStubSettings.newBuilder().build(), clientContext, callableFactory);
+    return new GrpcIamCredentialsStub(
+        IamCredentialsStubSettings.newBuilder().build(), clientContext, callableFactory);
   }
 
   /**
-   * Constructs an instance of GrpcIAMCredentialsStub, using the given settings. This is protected
+   * Constructs an instance of GrpcIamCredentialsStub, using the given settings. This is protected
    * so that it is easy to make a subclass, but otherwise, the static factory methods should be
    * preferred.
    */
-  protected GrpcIAMCredentialsStub(IAMCredentialsStubSettings settings, ClientContext clientContext)
+  protected GrpcIamCredentialsStub(IamCredentialsStubSettings settings, ClientContext clientContext)
       throws IOException {
-    this(settings, clientContext, new GrpcIAMCredentialsCallableFactory());
+    this(settings, clientContext, new GrpcIamCredentialsCallableFactory());
   }
 
   /**
-   * Constructs an instance of GrpcIAMCredentialsStub, using the given settings. This is protected
+   * Constructs an instance of GrpcIamCredentialsStub, using the given settings. This is protected
    * so that it is easy to make a subclass, but otherwise, the static factory methods should be
    * preferred.
    */
-  protected GrpcIAMCredentialsStub(
-      IAMCredentialsStubSettings settings,
+  protected GrpcIamCredentialsStub(
+      IamCredentialsStubSettings settings,
       ClientContext clientContext,
       GrpcStubCallableFactory callableFactory)
       throws IOException {

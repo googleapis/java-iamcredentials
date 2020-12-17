@@ -17,7 +17,7 @@
 /**
  * The interfaces provided are listed below, along with usage samples.
  *
- * <p>======================= IAMCredentialsClient =======================
+ * <p>======================= IamCredentialsClient =======================
  *
  * <p>Service Description: A service account is a special type of Google account that belongs to
  * your application or a virtual machine (VM), instead of to an individual end user. Your
@@ -28,7 +28,7 @@
  * account. Supported credential types include OAuth 2.0 access tokens, OpenID Connect ID tokens,
  * self-signed JSON Web Tokens (JWTs), and more.
  *
- * <p>Sample for IAMCredentialsClient:
+ * <p>Sample for IamCredentialsClient:
  */
 @Generated("by gapic-generator-java")
 package com.google.cloud.iam.credentials.v1;

@@ -45,7 +45,7 @@ import org.junit.Test;
 public class IAMCredentialsClientTest {
   private static MockServiceHelper mockServiceHelper;
   private static MockIAMCredentials mockIAMCredentials;
-  private IAMCredentialsClient client;
+  private IamCredentialsClient client;
   private LocalChannelProvider channelProvider;
 
   @BeforeClass
@@ -66,12 +66,12 @@ public class IAMCredentialsClientTest {
   public void setUp() throws IOException {
     mockServiceHelper.reset();
     channelProvider = mockServiceHelper.createChannelProvider();
-    IAMCredentialsSettings settings =
-        IAMCredentialsSettings.newBuilder()
+    IamCredentialsSettings settings =
+        IamCredentialsSettings.newBuilder()
             .setTransportChannelProvider(channelProvider)
             .setCredentialsProvider(NoCredentialsProvider.create())
             .build();
-    client = IAMCredentialsClient.create(settings);
+    client = IamCredentialsClient.create(settings);
   }
 
   @After

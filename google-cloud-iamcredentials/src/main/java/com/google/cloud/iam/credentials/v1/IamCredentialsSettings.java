@@ -26,14 +26,14 @@ import com.google.api.gax.rpc.ClientContext;
 import com.google.api.gax.rpc.ClientSettings;
 import com.google.api.gax.rpc.TransportChannelProvider;
 import com.google.api.gax.rpc.UnaryCallSettings;
-import com.google.cloud.iam.credentials.v1.stub.IAMCredentialsStubSettings;
+import com.google.cloud.iam.credentials.v1.stub.IamCredentialsStubSettings;
 import java.io.IOException;
 import java.util.List;
 import javax.annotation.Generated;
 
 // AUTO-GENERATED DOCUMENTATION AND CLASS.
 /**
- * Settings class to configure an instance of {@link IAMCredentialsClient}.
+ * Settings class to configure an instance of {@link IamCredentialsClient}.
  *
  * <p>The default instance has everything set to sensible defaults:
  *
@@ -50,82 +50,82 @@ import javax.annotation.Generated;
  * <p>For example, to set the total timeout of generateAccessToken to 30 seconds:
  *
  * <pre>{@code
- * IAMCredentialsSettings.Builder iAMCredentialsSettingsBuilder =
- *     IAMCredentialsSettings.newBuilder();
- * iAMCredentialsSettingsBuilder
+ * IamCredentialsSettings.Builder iamCredentialsSettingsBuilder =
+ *     IamCredentialsSettings.newBuilder();
+ * iamCredentialsSettingsBuilder
  *     .generateAccessTokenSettings()
  *     .setRetrySettings(
- *         iAMCredentialsSettingsBuilder
+ *         iamCredentialsSettingsBuilder
  *             .generateAccessTokenSettings()
  *             .getRetrySettings()
  *             .toBuilder()
  *             .setTotalTimeout(Duration.ofSeconds(30))
  *             .build());
- * IAMCredentialsSettings iAMCredentialsSettings = iAMCredentialsSettingsBuilder.build();
+ * IamCredentialsSettings iamCredentialsSettings = iamCredentialsSettingsBuilder.build();
  * }</pre>
  */
 @Generated("by gapic-generator-java")
-public class IAMCredentialsSettings extends ClientSettings<IAMCredentialsSettings> {
+public class IamCredentialsSettings extends ClientSettings<IamCredentialsSettings> {
 
   /** Returns the object with the settings used for calls to generateAccessToken. */
   public UnaryCallSettings<GenerateAccessTokenRequest, GenerateAccessTokenResponse>
       generateAccessTokenSettings() {
-    return ((IAMCredentialsStubSettings) getStubSettings()).generateAccessTokenSettings();
+    return ((IamCredentialsStubSettings) getStubSettings()).generateAccessTokenSettings();
   }
 
   /** Returns the object with the settings used for calls to generateIdToken. */
   public UnaryCallSettings<GenerateIdTokenRequest, GenerateIdTokenResponse>
       generateIdTokenSettings() {
-    return ((IAMCredentialsStubSettings) getStubSettings()).generateIdTokenSettings();
+    return ((IamCredentialsStubSettings) getStubSettings()).generateIdTokenSettings();
   }
 
   /** Returns the object with the settings used for calls to signBlob. */
   public UnaryCallSettings<SignBlobRequest, SignBlobResponse> signBlobSettings() {
-    return ((IAMCredentialsStubSettings) getStubSettings()).signBlobSettings();
+    return ((IamCredentialsStubSettings) getStubSettings()).signBlobSettings();
   }
 
   /** Returns the object with the settings used for calls to signJwt. */
   public UnaryCallSettings<SignJwtRequest, SignJwtResponse> signJwtSettings() {
-    return ((IAMCredentialsStubSettings) getStubSettings()).signJwtSettings();
+    return ((IamCredentialsStubSettings) getStubSettings()).signJwtSettings();
   }
 
-  public static final IAMCredentialsSettings create(IAMCredentialsStubSettings stub)
+  public static final IamCredentialsSettings create(IamCredentialsStubSettings stub)
       throws IOException {
-    return new IAMCredentialsSettings.Builder(stub.toBuilder()).build();
+    return new IamCredentialsSettings.Builder(stub.toBuilder()).build();
   }
 
   /** Returns a builder for the default ExecutorProvider for this service. */
   public static InstantiatingExecutorProvider.Builder defaultExecutorProviderBuilder() {
-    return IAMCredentialsStubSettings.defaultExecutorProviderBuilder();
+    return IamCredentialsStubSettings.defaultExecutorProviderBuilder();
   }
 
   /** Returns the default service endpoint. */
   public static String getDefaultEndpoint() {
-    return IAMCredentialsStubSettings.getDefaultEndpoint();
+    return IamCredentialsStubSettings.getDefaultEndpoint();
   }
 
   /** Returns the default service scopes. */
   public static List<String> getDefaultServiceScopes() {
-    return IAMCredentialsStubSettings.getDefaultServiceScopes();
+    return IamCredentialsStubSettings.getDefaultServiceScopes();
   }
 
   /** Returns a builder for the default credentials for this service. */
   public static GoogleCredentialsProvider.Builder defaultCredentialsProviderBuilder() {
-    return IAMCredentialsStubSettings.defaultCredentialsProviderBuilder();
+    return IamCredentialsStubSettings.defaultCredentialsProviderBuilder();
   }
 
   /** Returns a builder for the default ChannelProvider for this service. */
   public static InstantiatingGrpcChannelProvider.Builder defaultGrpcTransportProviderBuilder() {
-    return IAMCredentialsStubSettings.defaultGrpcTransportProviderBuilder();
+    return IamCredentialsStubSettings.defaultGrpcTransportProviderBuilder();
   }
 
   public static TransportChannelProvider defaultTransportChannelProvider() {
-    return IAMCredentialsStubSettings.defaultTransportChannelProvider();
+    return IamCredentialsStubSettings.defaultTransportChannelProvider();
   }
 
   @BetaApi("The surface for customizing headers is not stable yet and may change in the future.")
   public static ApiClientHeaderProvider.Builder defaultApiClientHeaderProviderBuilder() {
-    return IAMCredentialsStubSettings.defaultApiClientHeaderProviderBuilder();
+    return IamCredentialsStubSettings.defaultApiClientHeaderProviderBuilder();
   }
 
   /** Returns a new builder for this class. */
@@ -143,35 +143,35 @@ public class IAMCredentialsSettings extends ClientSettings<IAMCredentialsSetting
     return new Builder(this);
   }
 
-  protected IAMCredentialsSettings(Builder settingsBuilder) throws IOException {
+  protected IamCredentialsSettings(Builder settingsBuilder) throws IOException {
     super(settingsBuilder);
   }
 
-  /** Builder for IAMCredentialsSettings. */
-  public static class Builder extends ClientSettings.Builder<IAMCredentialsSettings, Builder> {
+  /** Builder for IamCredentialsSettings. */
+  public static class Builder extends ClientSettings.Builder<IamCredentialsSettings, Builder> {
 
     protected Builder() throws IOException {
       this(((ClientContext) null));
     }
 
     protected Builder(ClientContext clientContext) {
-      super(IAMCredentialsStubSettings.newBuilder(clientContext));
+      super(IamCredentialsStubSettings.newBuilder(clientContext));
     }
 
-    protected Builder(IAMCredentialsSettings settings) {
+    protected Builder(IamCredentialsSettings settings) {
       super(settings.getStubSettings().toBuilder());
     }
 
-    protected Builder(IAMCredentialsStubSettings.Builder stubSettings) {
+    protected Builder(IamCredentialsStubSettings.Builder stubSettings) {
       super(stubSettings);
     }
 
     private static Builder createDefault() {
-      return new Builder(IAMCredentialsStubSettings.newBuilder());
+      return new Builder(IamCredentialsStubSettings.newBuilder());
     }
 
-    public IAMCredentialsStubSettings.Builder getStubSettingsBuilder() {
-      return ((IAMCredentialsStubSettings.Builder) getStubSettings());
+    public IamCredentialsStubSettings.Builder getStubSettingsBuilder() {
+      return ((IamCredentialsStubSettings.Builder) getStubSettings());
     }
 
     // NEXT_MAJOR_VER: remove 'throws Exception'.
@@ -210,8 +210,8 @@ public class IAMCredentialsSettings extends ClientSettings<IAMCredentialsSetting
     }
 
     @Override
-    public IAMCredentialsSettings build() throws IOException {
-      return new IAMCredentialsSettings(this);
+    public IamCredentialsSettings build() throws IOException {
+      return new IamCredentialsSettings(this);
     }
   }
 }

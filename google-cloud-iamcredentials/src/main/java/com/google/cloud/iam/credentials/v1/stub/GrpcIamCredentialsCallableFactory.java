@@ -42,7 +42,7 @@ import javax.annotation.Generated;
  * <p>This class is for advanced usage.
  */
 @Generated("by gapic-generator")
-public class GrpcIAMCredentialsCallableFactory implements GrpcStubCallableFactory {
+public class GrpcIamCredentialsCallableFactory implements GrpcStubCallableFactory {
 
   @Override
   public <RequestT, ResponseT> UnaryCallable<RequestT, ResponseT> createUnaryCallable(

@@ -50,7 +50,7 @@ import org.threeten.bp.Duration;
 
 // AUTO-GENERATED DOCUMENTATION AND CLASS.
 /**
- * Settings class to configure an instance of {@link IAMCredentialsStub}.
+ * Settings class to configure an instance of {@link IamCredentialsStub}.
  *
  * <p>The default instance has everything set to sensible defaults:
  *
@@ -67,23 +67,23 @@ import org.threeten.bp.Duration;
  * <p>For example, to set the total timeout of generateAccessToken to 30 seconds:
  *
  * <pre>{@code
- * IAMCredentialsStubSettings.Builder iAMCredentialsSettingsBuilder =
- *     IAMCredentialsStubSettings.newBuilder();
- * iAMCredentialsSettingsBuilder
+ * IamCredentialsStubSettings.Builder iamCredentialsSettingsBuilder =
+ *     IamCredentialsStubSettings.newBuilder();
+ * iamCredentialsSettingsBuilder
  *     .generateAccessTokenSettings()
  *     .setRetrySettings(
- *         iAMCredentialsSettingsBuilder
+ *         iamCredentialsSettingsBuilder
  *             .generateAccessTokenSettings()
  *             .getRetrySettings()
  *             .toBuilder()
  *             .setTotalTimeout(Duration.ofSeconds(30))
  *             .build());
- * IAMCredentialsStubSettings iAMCredentialsSettings = iAMCredentialsSettingsBuilder.build();
+ * IamCredentialsStubSettings iamCredentialsSettings = iamCredentialsSettingsBuilder.build();
  * }</pre>
  */
 @BetaApi
 @Generated("by gapic-generator-java")
-public class IAMCredentialsStubSettings extends StubSettings<IAMCredentialsStubSettings> {
+public class IamCredentialsStubSettings extends StubSettings<IamCredentialsStubSettings> {
   /** The default scopes of the service. */
   private static final ImmutableList<String> DEFAULT_SERVICE_SCOPES =
       ImmutableList.<String>builder().add("https://www.googleapis.com/auth/cloud-platform").build();
@@ -118,11 +118,11 @@ public class IAMCredentialsStubSettings extends StubSettings<IAMCredentialsStubS
   }
 
   @BetaApi("A restructuring of stub classes is planned, so this may break in the future")
-  public IAMCredentialsStub createStub() throws IOException {
+  public IamCredentialsStub createStub() throws IOException {
     if (getTransportChannelProvider()
         .getTransportName()
         .equals(GrpcTransportChannel.getGrpcTransportName())) {
-      return GrpcIAMCredentialsStub.create(this);
+      return GrpcIamCredentialsStub.create(this);
     }
     throw new UnsupportedOperationException(
         String.format(
@@ -163,7 +163,7 @@ public class IAMCredentialsStubSettings extends StubSettings<IAMCredentialsStubS
   public static ApiClientHeaderProvider.Builder defaultApiClientHeaderProviderBuilder() {
     return ApiClientHeaderProvider.newBuilder()
         .setGeneratedLibToken(
-            "gapic", GaxProperties.getLibraryVersion(IAMCredentialsStubSettings.class))
+            "gapic", GaxProperties.getLibraryVersion(IamCredentialsStubSettings.class))
         .setTransportToken(
             GaxGrpcProperties.getGrpcTokenName(), GaxGrpcProperties.getGrpcVersion());
   }
@@ -183,7 +183,7 @@ public class IAMCredentialsStubSettings extends StubSettings<IAMCredentialsStubS
     return new Builder(this);
   }
 
-  protected IAMCredentialsStubSettings(Builder settingsBuilder) throws IOException {
+  protected IamCredentialsStubSettings(Builder settingsBuilder) throws IOException {
     super(settingsBuilder);
 
     generateAccessTokenSettings = settingsBuilder.generateAccessTokenSettings().build();
@@ -192,8 +192,8 @@ public class IAMCredentialsStubSettings extends StubSettings<IAMCredentialsStubS
     signJwtSettings = settingsBuilder.signJwtSettings().build();
   }
 
-  /** Builder for IAMCredentialsStubSettings. */
-  public static class Builder extends StubSettings.Builder<IAMCredentialsStubSettings, Builder> {
+  /** Builder for IamCredentialsStubSettings. */
+  public static class Builder extends StubSettings.Builder<IamCredentialsStubSettings, Builder> {
     private final ImmutableList<UnaryCallSettings.Builder<?, ?>> unaryMethodSettingsBuilders;
     private final UnaryCallSettings.Builder<GenerateAccessTokenRequest, GenerateAccessTokenResponse>
         generateAccessTokenSettings;
@@ -255,7 +255,7 @@ public class IAMCredentialsStubSettings extends StubSettings<IAMCredentialsStubS
       initDefaults(this);
     }
 
-    protected Builder(IAMCredentialsStubSettings settings) {
+    protected Builder(IamCredentialsStubSettings settings) {
       super(settings);
 
       generateAccessTokenSettings = settings.generateAccessTokenSettings.toBuilder();
@@ -345,8 +345,8 @@ public class IAMCredentialsStubSettings extends StubSettings<IAMCredentialsStubS
     }
 
     @Override
-    public IAMCredentialsStubSettings build() throws IOException {
-      return new IAMCredentialsStubSettings(this);
+    public IamCredentialsStubSettings build() throws IOException {
+      return new IamCredentialsStubSettings(this);
     }
   }
 }
