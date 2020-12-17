@@ -254,8 +254,8 @@ public class IAMCredentialsClient implements BackgroundResource {
    *     required; replacing it with a project ID is invalid.
    * @param audience Required. The audience for the token, such as the API or account that this
    *     token grants access to.
-   * @param include_email Include the service account email in the token. If set to `true`, the
-   *     token will contain `email` and `email_verified` claims.
+   * @param includeEmail Include the service account email in the token. If set to `true`, the token
+   *     will contain `email` and `email_verified` claims.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final GenerateIdTokenResponse generateIdToken(
@@ -288,8 +288,8 @@ public class IAMCredentialsClient implements BackgroundResource {
    *     required; replacing it with a project ID is invalid.
    * @param audience Required. The audience for the token, such as the API or account that this
    *     token grants access to.
-   * @param include_email Include the service account email in the token. If set to `true`, the
-   *     token will contain `email` and `email_verified` claims.
+   * @param includeEmail Include the service account email in the token. If set to `true`, the token
+   *     will contain `email` and `email_verified` claims.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final GenerateIdTokenResponse generateIdToken(
