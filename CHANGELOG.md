@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.0](https://www.github.com/googleapis/java-iamcredentials/compare/v1.3.2...v1.4.0) (2021-08-04)
+
+
+### Features
+
+* configure initial sp version ([#495](https://www.github.com/googleapis/java-iamcredentials/issues/495)) ([7bdfc93](https://www.github.com/googleapis/java-iamcredentials/commit/7bdfc93e7b6386be79930a9e6c2e2a269e3038e1))
+
 ### [1.3.2](https://www.github.com/googleapis/java-iamcredentials/compare/v1.3.1...v1.3.2) (2021-07-01)
 
 
