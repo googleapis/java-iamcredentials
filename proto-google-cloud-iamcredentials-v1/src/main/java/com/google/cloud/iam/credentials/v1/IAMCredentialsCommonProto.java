@@ -69,8 +69,7 @@ public final class IAMCredentialsCommonProto {
   static {
     java.lang.String[] descriptorData = {
       "\n"
-          + "&google/iam/credentials/v1/common.proto"
-          + "\022\031google.iam.credentials.v1\032\037google/api/field_behavior.proto\032\031google/api/resource.proto\032\036google/protobuf/duration.proto\032\037google/protobuf/timestamp.proto\"\251\001\n"
+          + "&google/iam/credentials/v1/common.proto\022\031google.iam.credentials.v1\032\037google/api/field_behavior.proto\032\031google/api/resource.proto\032\036google/protobuf/duration.proto\032\037google/protobuf/timestamp.proto\"\251\001\n"
           + "\032GenerateAccessTokenRequest\0227\n"
           + "\004name\030\001 \001(\tB)\340A\002\372A#\n"
           + "!iam.googleapis.com/ServiceAccount\022\021\n"
