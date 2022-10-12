@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.15](https://github.com/googleapis/java-iamcredentials/compare/v2.0.14...v2.0.15) (2022-10-12)
+
+
+### Dependencies
+
+* Regenerating with new Protobuf (2.0.x) ([#762](https://github.com/googleapis/java-iamcredentials/issues/762)) ([b6ed24e](https://github.com/googleapis/java-iamcredentials/commit/b6ed24ef8534637bb54f0a79ac89633520b43ee3))
+
 ### [2.0.14](https://github.com/googleapis/java-iamcredentials/compare/v2.0.13...v2.0.14) (2022-04-15)
 
 
