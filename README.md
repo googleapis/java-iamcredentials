@@ -49,20 +49,20 @@ If you are using Maven without BOM, add this to your dependencies:
 If you are using Gradle 5.x or later, add this to your dependencies
 
 ```Groovy
-implementation platform('com.google.cloud:libraries-bom:25.1.0')
+implementation platform('com.google.cloud:libraries-bom:26.4.0')
 
 implementation 'com.google.cloud:google-cloud-iamcredentials'
 ```
 If you are using Gradle without BOM, add this to your dependencies
 
 ```Groovy
-implementation 'com.google.cloud:google-cloud-iamcredentials:2.0.13'
+implementation 'com.google.cloud:google-cloud-iamcredentials:2.8.0'
 ```
 
 If you are using SBT, add this to your dependencies
 
 ```Scala
-libraryDependencies += "com.google.cloud" % "google-cloud-iamcredentials" % "2.0.13"
+libraryDependencies += "com.google.cloud" % "google-cloud-iamcredentials" % "2.8.0"
 ```
 
 ## Authentication
